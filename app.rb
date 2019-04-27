@@ -18,6 +18,6 @@ class App < Sinatra::Base
     @phrase = params[:phrase]
     
     erb :say 
-    binding.pry
+    #binding.pry
   end 
 end
