@@ -17,7 +17,10 @@ class App < Sinatra::Base
     @number = params[:number].to_i
     @phrase = params[:phrase]
     
-    erb :say 
+    #erb :say 
+    arr = []
+    @number.times {arr << @phrase}
+    arr.join(" ")
     binding.pry
   end 
 end
