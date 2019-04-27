@@ -1,3 +1,3 @@
 <% @arr = [] %>
-<% @number.times {@arr << @phrase} %>
+<% @number.times {|x| @arr << @phrase} %>
 <% @arr.join(" ") %>
