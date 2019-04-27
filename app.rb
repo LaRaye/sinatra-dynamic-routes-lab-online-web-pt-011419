@@ -36,5 +36,6 @@ class App < Sinatra::Base
     @number2 = params[:number2]
     
     erb :operate
+    binding.pry
   end 
 end
