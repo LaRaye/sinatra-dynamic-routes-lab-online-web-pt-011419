@@ -19,7 +19,7 @@ class App < Sinatra::Base
     
     #erb :say 
     @arr = []
-    @number.times {arr << @phrase}
+    @number.times {@arr << @phrase}
     @arr.join(" ")
     binding.pry
   end 
